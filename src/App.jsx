@@ -4,8 +4,12 @@ import Home from "./ui/Home";
 import Projects from "./features/projects/Projects";
 import Rooms from "./features/rooms/Rooms";
 import About from "./ui/About";
+import { useSelector } from "react-redux";
 
 function App() {
+  // const x = useSelector((state) => state);
+  // console.log(x);
+
   const router = createBrowserRouter([
     {
       element: <AppLayout />,
