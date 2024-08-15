@@ -1,10 +1,16 @@
 import { Outlet } from "react-router";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function AppLayout() {
   return (
-    <div>
-      <Outlet />
-    </div>
+    <>
+      <Header />
+      <div className="size-full min-h-[80dvh]">
+        <Outlet />
+      </div>
+      <Footer />
+    </>
   );
 }
 
